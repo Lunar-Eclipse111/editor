@@ -2479,7 +2479,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[\n    discord.gg/VnerSZksQN\n ]]";
+    const defaultText = "--[[\n    discord.gg/VnerSZksQN \n ]]";
     
     if (!content) {
         content = defaultText;
@@ -2543,7 +2543,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[    discord.gg/VnerSZksQN\n ]]" : tab.content;
+        const contentToSet = tab.content.trim() === '' ? "--[[    discord.gg/VnerSZksQN \n ]]" : tab.content;
         editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
